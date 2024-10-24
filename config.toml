@@ -1,9 +1,8 @@
 # The URL the site will be built for
-base_url = "https://mrkaran.dev/"
-title = "Karan Sharma"
-description = "Ramblings on programming, tech and life."
-generate_feeds = false
-feed_filenames = ["atom.xml"] # default template
+base_url = "https://haariskhatri.dev/"
+title = "Haaris Khatri"
+description = "Learnings Dumped"
+
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
@@ -35,9 +34,6 @@ url = "@/posts/_index.md"
 name = "Projects"
 url = "@/projects/_index.md"
 
-[[extra.main_menu]]
-name = "Talks"
-url = "@/talks.md"
 
 [[extra.main_menu]]
 name = "TIL"

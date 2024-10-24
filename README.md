@@ -1,6 +1,6 @@
 # website
 
-Visit at [mrkaran.dev](https://mrkaran.dev)
+Visit at [haariskhatri.dev](https://haariskhatri.dev)
 
 ---
 

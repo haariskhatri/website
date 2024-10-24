@@ -176,6 +176,9 @@ footer {
     border-radius: 50%;
     /* Rounds the image */
     width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: top;
 }
 
 .admonition {
