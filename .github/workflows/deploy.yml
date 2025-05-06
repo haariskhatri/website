@@ -1,0 +1,36 @@
+name: Deploy Site
+on: 
+    push: 
+        branches: 
+            - main
+jobs:
+    prepare-files:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout main
+              uses: actions/checkout@v4
+            
+            - name: Create Zola Build
+              uses: shalzz/zola-deploy-action@v0.17.2
+              with:
+                build_dir: public
+              env:
+                BUILD_ONLY: true
+            
+            - name: Configure AWS credentials
+              uses: aws-actions/configure-aws-credentials@v4
+              with:
+                aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            
+            - name: Sync S3
+              run: |
+                aws s3 sync public/ s3://${{ secrets.S3_BUCKET }} --delete
+            
+            - name: Invalidate CloudFront cache
+              run: |
+                aws cloudfront create-invalidation \
+                  --distribution-id ${{ secrets.DISTUBUTION_ID }} \
+                  --paths "/*"
+    
+

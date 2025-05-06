@@ -2,10 +2,10 @@
 title = "Contact Me"
 +++
 
-Email: haarishkkhatri@gmail.com
+Email: [haarishkkhatri@gmail.com](mailto:haarishkkhatri@gmail.com)
 
 My other identities:
 
-*   Twitter: [@mrkaran_](https://twitter.com/mrkaran_?ref=mrkaran.dev)
-*   GitHub: [haariskhatri](https://github.com/mr-karan/?ref=haariskhatri)
+*   Twitter: [@haaris_khatri](https://x.com/haaris_khatri)
+*   GitHub: [haariskhatri](https://github.com/haariskhatri)
 

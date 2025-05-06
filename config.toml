@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://haariskhatri.dev/"
+base_url = "/"
 title = "Haaris Khatri"
 description = "Learnings Dumped"
 
@@ -25,15 +25,11 @@ render_emoji = true
 smart_punctuation = true
 [extra]
 date_format="%d %b, %Y"
+external_links_target_blank = true
 
 [[extra.main_menu]]
 name = "Posts"
 url = "@/posts/_index.md"
-
-[[extra.main_menu]]
-name = "Projects"
-url = "@/projects/_index.md"
-
 
 [[extra.main_menu]]
 name = "TIL"
@@ -46,3 +42,4 @@ url = "@/travel/_index.md"
 [[extra.main_menu]]
 name = "Contact"
 url = "@/contact.md"
+
